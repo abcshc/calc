@@ -36,4 +36,11 @@ class NumbersTest{
     fun 빈_값_숫자_얻기_예외(){
         print(numbers.getNumber())
     }
+
+    @Test
+    fun 빈_값_확인(){
+        assertEquals(true, numbers.isEmpty())
+        numbers.putNumber('1')
+        assertEquals(false, numbers.isEmpty())
+    }
 }
