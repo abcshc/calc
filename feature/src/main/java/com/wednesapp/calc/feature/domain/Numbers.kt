@@ -19,4 +19,8 @@ class Numbers {
             throw NotNumberCharException()
         return numbers.toInt()
     }
+
+    fun isEmpty(): Boolean {
+        return numbers.isEmpty()
+    }
 }
